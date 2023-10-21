@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.content_body {
+    background-color: #aec6b2;
+    padding: 35px 30px;
+    height: 100%;
+    min-height: 100%;
+}
+
+.main_content {
+    background-color: white;
+    padding: 30px 75px;
+    height: 655px;
+    border-radius: 30px;
+    box-shadow: 0 0 25px black;
+    overflow: auto;
+
+}
+
+.sideBar {
+    position: absolute;
+    top: 35px;
+    left: 30px;
+    height: 655px;
+    width: 300px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: 6px 0px 25px #5d5555;
+}
+
+.navBar {
+    background-color: #C8FFE0;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 100%;
+    min-height: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.navBar_head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+    margin-right: 10px;
+}
+
+.head_icon img {
+    width: 80px;
+    margin-left: 8px;
+}
+
+.head_text p {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 28px;
+    margin-top: 15px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+}
+
+.navBar_list {
+    height: 65%;
+    margin: 10px 5px;
+    padding: 5px;
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    list-style-type: none;
+    row-gap: 15px;
+}
+
+.list_items a .listIcons {
+    margin-right: 20px;
+}
+
+.list_items a .listIconsTwo {
+    margin-right: 16px;
+}
+
+.list_items a .listIconsThree {
+    margin-right: 28px;
+}
+
+.list_items a .listIconsFour {
+    margin-right: 22px;
+}
+
+.list_items a .listIconsFive {
+    margin-right: 32px;
+}
+
+.list_items a .listIconsSix {
+    margin-right: 25px;
+}
+
+.list_items a span {
+    font-size: 20px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+}
+
+.list_items a span:hover {
+    color: #0d6efd;
+    cursor: pointer;
+}
+
+.userOption {
+    position: absolute;
+    bottom: 30px;
+    margin-left: 10px;
+    padding: 20px 10px;
+    width: 85%;
+    border-top: 1px solid;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.dropdown_option {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown_option img {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.dropdown-toggle {
+    outline: 0;
+}
+
+.data_content {
+    background-color: rgba(238, 238, 238, 1);
+    position: absolute;
+    top: 35px;
+    left: 352px;
+    height: 655px;
+    width: 1154px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 20px;
+    padding-right: 50px;
+}
+
+.content_head {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px 5px;
+    padding-right: 2px;
+}
+
+.head_title p {
+    padding: 5px 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.head_navbar {
+    display: flex;
+    margin-left: 555px;
+    width: 400px;
+    padding: 0px 15px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navBar_search input {
+    background-color: rgba(238, 238, 238, 1);
+    padding: 0px 5px;
+}
+
+.search_icon {
+    margin-left: 5px;
+}
+
+.search_icon {
+    border: 2px solid black;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.search_icon i {
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 6px;
+    box-shadow: 0 0 12px black;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+input[type="search"] {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.navBar_Icons {
+    margin-left: 15px;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content_bodyDetail {
+    height: 560px;
+    margin-top: 10px;
+    width: 72vw;
+    padding: 8px 5px;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+}
