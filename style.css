@@ -233,14 +233,158 @@ input[type="search"] {
     justify-content: space-around;
 }
 
+.icon:hover {
+    cursor: pointer;
+}
+
 .content_bodyDetail {
     height: 560px;
     margin-top: 10px;
     width: 72vw;
     padding: 8px 5px;
     overflow: auto;
+
     &::-webkit-scrollbar {
         width: 0;
     }
 }
 
+.content_cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 15px;
+}
+
+.cardUsedSpace,
+.cardRevenue,
+.cardFixedIssue,
+.cardFollowers {
+    background-color: white;
+    width: 230px;
+    margin: 8px 0px;
+}
+
+.card_head {
+    display: flex;
+    padding: 5px 5px;
+    justify-content: flex-start;
+}
+
+.content_detailOne {
+    width: 220px;
+    padding-left: 115px;
+}
+
+.content_detailTwo {
+    width: 220px;
+    padding-left: 132px;
+}
+
+.content_detailThree {
+    width: 220px;
+    padding-left: 133px;
+}
+
+.content_detailFour {
+    width: 220px;
+    padding-left: 149px;
+}
+
+.content_detailOne .detail_text {
+    padding-left: 18px;
+}
+
+.content_detailTwo .detail_text {
+    padding-left: 24px;
+}
+
+.content_detailOne .detail_storage {
+    font-size: 25px;
+}
+
+.content_detailTwo .detail_storage {
+    font-size: 25px;
+}
+
+.content_detailThree .detail_storage {
+    font-size: 25px;
+    padding-left: 56px;
+}
+
+.content_detailFour .detail_storage {
+    font-size: 25px;
+    padding-left: 12px;
+}
+
+.head_iconsOne {
+    background-color: rgba(251, 157, 49, 1);
+    width: 60px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50px;
+    top: 84px;
+}
+
+.head_iconsTwo {
+    background-color: rgba(97, 180, 102, 1);
+    width: 60px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 330px;
+    top: 84px;
+}
+
+.head_iconsThree {
+    background-color: rgba(234, 78, 79, 1);
+    width: 60px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    position: absolute;
+    left: 600px;
+    top: 84px;
+}
+
+.head_iconsFour {
+    background-color: rgba(38, 183, 202, 1);
+    width: 60px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    position: absolute;
+    left: 878px;
+    top: 84px;
+}
+
+.card_foot {
+    height: 30px;
+    width: 210px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 10px;
+    border-top: 1px solid;
+}
+
+.card_foot p {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.text_alert {
+    color: red;
+}
+
+.content_graphs {
+    display: flex;
+
+}
