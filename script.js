@@ -16,12 +16,11 @@ new Chart("mySalesChart", {
     options: {
         legend: { display: false },
         scales: {
-            yAxes: [{ ticks: { min: 0, max: 40, fontColor:'white' } }],
-            xAxes: [{ ticks: { fontColor:'white' } }],
+            yAxes: [{ ticks: { min: 0, max: 40, fontColor: 'white', fontSize: 18 } }],
+            xAxes: [{ ticks: { fontColor: 'white', fontSize: 18 } }],
         },
         maintainAspectRatio: false,
         responsive: true,
-        
     }
 });
 
@@ -37,30 +36,48 @@ new Chart("myTaskChart", {
             lineTension: 0,
             backgroundColor: "rgba(255,255,255,1)",
             borderColor: "rgba(255,255,255,1)",
-            data: bValues, 
+            data: bValues,
         }]
     },
     options: {
         legend: { display: false },
         scales: {
-            yAxes: [{ ticks: { min: 6, max: 16 } }],
+            yAxes: [{ ticks: { min: 6, max: 16, fontColor: 'white', fontSize: 18 } }],
+            xAxes: [{ ticks: { fontColor: 'white', fontSize: 18 } }],
         },
         maintainAspectRatio: false,
         responsive: true,
-        height: 320,
+        height: 170,
     }
 });
 
-const itemList = ['Iphone', 'Redmi', 'Samsung', 'Realme', 'Motorola', 'ASUS'];
-const priceList = [120000, 25000, 55000, 18000, 12000, 78000];
+const itemList = ['J', 'F', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'];
+const priceList = [400, 300, 200, 700, 420, 350, 240, 330, 455, 520, 750];
 
-const data = [{
-    x: itemList,
-    y: priceList,
-    type: 'bar',
-    orientation: 'v',
-    marker: { color: "rgba(255, 0, 0, 0.6)" }
-}];
-
-const title = { title: 'Mobile Prices' };
-Plotly.newPlot('myEmailSubGraph', data, title);
+new Chart("myEmailSubGraph", {
+    type: "bar",
+    data: {
+        labels: itemList,
+        datasets: [{
+            backgroundColor: "rgba(255,255,255,1)",
+            data: priceList
+        }]
+    },
+    options: {
+        legend: { display: false },
+        title: {
+            display: true,
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    fontColor: 'white',
+                    min: 0,
+                    max: 800,
+                    fontSize: 18
+                }
+            }],
+            xAxes: [{ ticks: { fontColor: 'white', } }],
+        },
+    }
+});
