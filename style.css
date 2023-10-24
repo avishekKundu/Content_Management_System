@@ -9,7 +9,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
+    width: 5px;
 }
 
 .content_body {
@@ -386,5 +386,42 @@ input[type="search"] {
 
 .content_graphs {
     display: flex;
+    height: 370px;
+    overflow: auto;
+    padding: 15px 5px;
+}
 
+.cardDailySales {
+    width: 320px;
+    padding: 8px 0px;
+}
+
+.card_Graph {
+    padding: 5px 7px;
+}
+
+.head_graph {
+    background-color: rgba(88, 171, 91, 1);
+    width: 308px;
+    max-width: 290px;
+    height: 170px;
+    margin-left: 14px;
+    border-radius: 8px;
+    position: absolute;
+
+}
+
+#mySalesChart {
+    max-width: 280px;
+    padding: 10px 10px;
+}
+
+.content_detail {
+    background-color: white;
+    height: 285px;
+    width: 318px;
+    padding: 170px 0px;
+    padding-bottom: 2px;
+    margin-top: 15px;
+    border-radius: 8px;
 }
